@@ -5,9 +5,9 @@
  body{
     
     display: grid;
-    grid-template-rows: 50px 1fr;
-    height: 200vh;
-    min-width: 560px;
+    grid-template-rows: auto 1fr;
+     min-width: 100%;
+     min-height:100vh;
     font-family: "Bebas Neue", sans-serif;
  }
 
@@ -44,7 +44,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
 }
 .subtitulo-nome{
 font-size: 50px;
@@ -70,7 +71,9 @@ section {
   gap: 2rem;
   padding: 2rem;
   /*importante*/
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
+  
   box-sizing: border-box;
 }
 
@@ -108,6 +111,7 @@ section {
 
 .logo img {
   max-width: 50px;
+  /*importante */
   border-radius: 50%;
   margin-top: 25px;
   margin-left: 10px;
@@ -132,7 +136,6 @@ section {
 
   .opcoes-nav {
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .opcoes-nav h2 {
@@ -152,7 +155,36 @@ section {
   .modal-apresentacao {
     max-width: 90%;
   }
+
+  .Menu-nav {
+    flex-direction: row;
+    text-align: center;
+    
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  #apresentacao{
+
+    width: 100%;
+  }
+
+
+  #nome-curriculo {
+    font-size: 30px;
+  }
+
+  .subtitulo-nome {
+    font-size: 20px;
 }
+
+}
+
+
+  
+  
+
+
 
  
 
