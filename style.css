@@ -7,6 +7,7 @@
     display: grid;
     grid-template-rows: 50px 1fr;
     height: 200vh;
+    min-width: 560px;
     font-family: "Bebas Neue", sans-serif;
  }
 
@@ -35,9 +36,7 @@
    gap: 20px;
  }
 
- .opcoes-nav h2{
-  color: #8e53be;
- }
+ 
 
 #introducao{
   display: flex;
@@ -71,16 +70,18 @@ section {
   gap: 2rem;
   padding: 2rem;
   /*importante*/
-  min-height: 75vh;
+  height: 100vh;
   box-sizing: border-box;
 }
 
 
 #apresentacao{
   max-width: 500px;
+ 
 }
 
 .modal-apresentacao{
+  display: flex;
   background-color: #353438;
   color: white;
   padding: 2rem 3rem;
@@ -88,17 +89,7 @@ section {
   max-width: 400px;
   text-align: center;
   font-size: 1rem;
-  
-  
 }
-
-@media (max-width: 768px) {
-    #sobre-mim {
-      flex-direction: column;
-      text-align: center;
-    }
-}
-
 .rodape{
   display: flex;           
     align-items: center;     
@@ -122,5 +113,47 @@ section {
   margin-left: 10px;
 }
 
+.opcoes-nav h2 {
+  color: #8e53be;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.Menu-nav .opcoes-nav h2:hover {
+  color: rgb(163, 26, 226);
+ 
+}
+
+/*porte de responsavidade do  mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .opcoes-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .opcoes-nav h2 {
+    font-size: 18px;
+  }
+
+  #titulo-nome {
+    font-size: 48px;
+  }
+
+  #sobre-mim {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .modal-apresentacao {
+    max-width: 90%;
+  }
+}
+
+ 
 
  

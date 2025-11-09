@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 4rem;
     padding: 2rem;
+    margin-top: 1.5rem;
 }
 #titulo-habilidade{
     margin: 1rem;
@@ -13,7 +14,7 @@
     border: 5px solid rgb(78, 70, 70);
     border-radius: 5px;
     background-color:  #674385;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
 }
 
 .form{
@@ -58,6 +59,9 @@ justify-items: center;
 
 .grid-projetos .form{
 padding: 1.5rem;
+}
 
-
+.grid-projetos .form:hover {
+    color:  rgb(163, 26, 226) ;
+    transition: .3s;
 }
