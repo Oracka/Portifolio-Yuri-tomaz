@@ -29,25 +29,3 @@
      flex: 1;
 }
 
-@media (max-width: 720px) {
-    .rodape {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .acesso {
-    position: static;   
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .acesso img {
-    width: 25px;           
-  }
-
-  .rodape h3 {
-    font-size: 1rem;     
-  }
-}
