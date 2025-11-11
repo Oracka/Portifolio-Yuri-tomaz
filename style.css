@@ -5,6 +5,7 @@
  body{
     
     display: grid;
+    transition: .4s;
     grid-template-rows: auto 1fr;
      min-width: 100%;
      min-height:100vh;
@@ -24,7 +25,7 @@
 
  /* futuramente vai ter uma logo aqui */
  #nome-curriculo{
-   margin-left: 30px;
+   margin-left: 27px;
    font-size: 35px;
    color: #8e53be;
   
@@ -67,7 +68,7 @@ section {
 #sobre-mim{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 2rem;
   padding: 2rem;
   /*importante*/
@@ -138,8 +139,14 @@ section {
     flex-wrap: wrap;
   }
 
+  #logo-curriculo {
+   display: none;
+  }
+
   .opcoes-nav h2 {
-    font-size: 18px;
+    font-size: 17px;
+    gap: 5px;
+   
   }
 
   #titulo-nome {
@@ -172,6 +179,7 @@ section {
 
   #nome-curriculo {
     font-size: 30px;
+    margin-left: 15px;
   }
 
   .subtitulo-nome {
